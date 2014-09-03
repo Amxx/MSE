@@ -1,0 +1,142 @@
+{
+	"title": "Hadrien Croubois",
+	"picture": "ressources/img/croubois.jpg",
+	
+	"pages": [
+		{ 
+			"title": "About",
+			"content": [
+				{
+					"title": "About me",
+					"text": "<p>I am a master student supervised by the <a href='http://www.ens-lyon.fr/DI/' target='_blank'>Computer Science Department</a> of the <a href='http://www.ens-lyon.eu' target='_blank'>ENS de Lyon</a> where I studied parallel processing, distributed systems and compilation. I am currently studying image acquisition and processing as a M2 student at the <a href='http://www.univ-lyon1.fr/' target='_blank'>University Claude Bernard of Lyon (UCBL)</a>.</p> <div id='map_ucbl' class='map' style='height:240px'></div>", 
+					"javascript": "var map = L.map('map_ucbl').setView([45.780268, 4.868528],  15); var osmUrl = 'http://tile.openstreetmap.org/{z}/{x}/{y}.png'; var osmAttrib = ''; map.addLayer(new L.TileLayer(osmUrl, {minZoom: 6, maxZoom: 18, attribution: osmAttrib})); popup1 = L.marker([45.782205, 4.865699]).bindPopup('UCBL').addTo(map);"
+				}
+			],
+			"default":true
+		},
+		{
+			"title": "Resume",
+			"content": [
+				{
+					"title": "Academic curriculum",
+					"text": "<ul><li>2013-present: <b>Master in Computer Science,</b>,<ul><li><a href='http://www.univ-lyon1.fr/' target='_blank'>UBCL Lyon 1, Lyon, France.</a><li>Specialization : Image acquisition and processing (Research).</ul><li>2012-2013: <b>Master in Computer Science</b>,<ul><li> <a href='http://www.ens-lyon.fr/DI/' target='_blank'>Ecole Normale Supérieur de Lyon - ENSL, Lyon, France.</a></ul><li>2011-2012: <b>\"Licence\" with distinction in Computer Science</b>,<ul><li><a href='http://www.ens-lyon.fr/DI/' target='_blank'>Ecole Normale Supérieur de Lyon - ENSL, Lyon, France.</a><li>Equivalent to Bachelor</ul><li>April 2010: <b>Honourable Mention in the French national selection for IPhO</b>,<ul><li> International Physics Olympiads.</ul><li>2009-2011: <b>\"Classes préparatoires\" in Science</b>,<ul><li>Lycée St-Louis, Paris, France.<li>Specialization : Computer Science.</ul><li>June 2009: <b>Scientific high school diploma with distinction</b>,<ul><li> <a href='http://www.lfjtokyo.org' target='_blank'>Lycée Franco-Japonais de Tokyo - LFJT, Tokyo, Japan.</a></ul></ul>View my <a href='files/CrouboisHadrien.pdf' target='_blank'>full resume</a>"
+				}
+			]
+		},
+		{
+			"title": "Work",
+			"content": [				{
+					"title" : "M2 Internship - Augmented reality for mobile platform",
+					"text": "<p>Nowadays, augmented reality offers new possibilities of interactions for users. However, development of mobile applications is still limited to simple rendering methods which do not offer visually credible  results in real time. Common methods either use complex acquisition hardware or intensive computing resources. In this paper, we develop a method for rendering virtual objects into a real scene, with dynamically acquired lighting, using mipmap levels for efficiently computing lighting and shadows data. Such method opens many perspectives to improve users’ interactions with their mobile devices.<ul><li>See my full <a href='files/Croubois_AugmentedReality.pdf' target='_blank'>full report</a> (3.4 mo, in french)<li><a href='https://github.com/Amxx/MobileReality' target='_blank'>Code on GitHub</a></ul>"
+				},
+				{
+					"title" : "M1 Internship - libGridRPCDM",
+					"text": "<p>LibGridRCPDM is a library providing an interoperable GridRPC API with a dedicated data manager corresponding to the GridRPC Data Manager standard.<ul><li>See my full <a href='files/Croubois_libGridRCPDM.pdf' target='_blank'>full report</a> (1.21 mo, in french)</ul>",
+					"hide": "true"
+				},
+				{
+					"title" : "MDMA Project",
+					"text": "<p>Motion Detection Midi Adaptor<ul><li><a href='files/mdma/MDMA-L0.pdf' target='_blank'>L0 report</a> (302.5 ko)<li><a href='files/mdma/MDMA-L2.pdf' target='_blank'>L2 report</a> (1.3 mo)<li><a href='files/mdma/MDMA-L3.pdf' target='_blank'>Final report (L3)</a> (3.9 mo)</ul>",
+					"hide": "true"
+				},
+				{
+					"title" : "L3 Internship",
+					"text": "<p>Étude de la dynamique des communautéde twitters en relation avec l'utilisation des hashtags</p><ul><li><a href='files/Croubois_QtTWitGraph.pdf' target='_blank'>Rapport de stage</a> (9.9 mo)</li><li><a href='files/QtTWitGraph_v2.tar.gz' target='_blank'>Code source</a> (561 ko)</li></ul>",
+					"hide": "true"
+				},
+				{
+					"title" : "L3 Colloquium",
+					"text": "<ul><li><a href='files/coloquium.pdf' target='_blank'>Transport Layer Identiﬁcation of P2P Traffic</a> (1.5 mo)</li></ul>",
+					"hide": "true"
+				}
+			]
+		},
+		{
+			"title":"Publication",
+			"content": [
+				{
+					"title": "Article in peer-reviewed journal",
+					"biblio": [
+						{
+							"title" : "Standardized multi-protocol data management for grid and cloud gridrpc frameworks.",
+							"author" : "Yves Caniou, Hadrien Croubois, and Gaël le Mahec.",
+							"ref" : "In Data Management in Cloud, Grid and P2P Systems, in 7th International Conference, Globe 2014, pages 1-12, Munich, Germany, 2014. LNCS.",
+							"bibtex" : "@inproceedings{globe14,<br/>  author = {Yves Caniou and Hadrien Croubois and Ga\"el le Mahec},<br/>  title = {Standardized multi-protocol data management for grid and cloud GridRPC frameworks},<br/>  booktitle = {Data Management in Cloud, Grid and P2P Systems, in 7th International Conference, Globe 2014},<br/>  address = {Munich, Germany},<br/>  year = 2014,<br/>  pages = {1--12},<br/>  month = {},<br/>  publisher = {LNCS},<br/>  vol = 8648,<br/>  x-pays = {JP},<br/>  x-editorial-board = {yes},<br/>  x-proceedings = {yes},<br/>  x-international-audience = {yes}<br/>}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"title": "Teaching",
+			"content": [
+				{
+					"title": "Acquisition et analyse d'images",
+					"text": "<h5 align='right'>(M2 UCBL 2013-2014)</h5><ul><li><a href='files/teaching/M2UCBL/squelettisation.pdf' target='_blank'>La squelettisation</a> (1.2 mo)",
+					"hide": "false"
+				},
+				{
+					"title": "Pascal tutorial classes for “classes prepa”",
+					"text": "<h5 align='right'>(Prepa HEC 2013-2014)</h5><ul><li><a href='files/teaching/pascal/fiche.pdf' target='_blank'>Aide mémoire Pascal</a> (132.3 ko)<li><a href='files/teaching/pascal/tp1.pdf' target='_blank'>TP1</a> (152.7 ko)<li><a href='files/teaching/pascal/tp2.pdf' target='_blank'>TP2</a> (106.4 ko)<li><a href='files/teaching/pascal/tp3.pdf' target='_blank'>TP3</a> (158.4 ko)<li><a href='files/teaching/pascal/tp4.pdf' target='_blank'>TP4</a> (198.4 ko)<li><a href='files/teaching/pascal/corrige1.pdf' target='_blank'>Correction de devoirs n°1</a> (227.4 ko)<li><a href='files/teaching/pascal/tp6.pdf' target='_blank'>TP6</a> (127.0 ko)<br/><center>Tous les codes sources sont disponible sur GitHub :<br/><a href='https://github.com/Amxx/PrepaPascal' target='_blank'>https://github.com/Amxx/PrepaPascal</a></center>",
+					"hide": "true"
+				},
+				{
+					"title": "Caml tutorial classes for “classes prepa”",
+					"text": "<h5 align='right'>(MP/MP* 2012-2013)</h5><p>TP 1 - Remise à niveau (2 & 9 oct)<ul><li><a href='files/teaching/caml/td01.pdf' target='_blank'>sujet</a> (107.3 ko)<li><a href='files/teaching/caml/corrige_td01.ml' target='_blank'>corrigé</a> (8.6 ko)</ul><p>TP 2 - Les automates (23 & 30 oct, 20 & 27 nov)<ul><li><a href='files/teaching/caml/td02.pdf' target='_blank'>sujet</a> (178,0 ko)<li><a href='files/teaching/caml/corrige_td02.ml' target='_blank'>corrigé</a> (3.5 ko)</ul><p>TP 3 - Les automates (4 & 18 nov)<ul><li><a href='files/teaching/caml/td03.pdf' target='_blank'>sujet</a> (185,7 ko)<li><a href='files/teaching/caml/corrige_td03.ml' target='_blank'>corrigé</a> (2.0 ko)</ul><p>TP 4 - Le codage de Huffman (5 fev)<ul><li><a href='files/teaching/caml/td04.pdf' target='_blank'>sujet</a> (139,8 ko)<li><a href='files/teaching/caml/corrige_td04.ml' target='_blank'>corrigé</a> (1.5 ko)</ul><p>TP 5 - Les Arbres rouges-noirs (12 fev)<ul><li><a href='files/teaching/caml/td05.pdf' target='_blank'>sujet</a> (165,9 ko)<li><a href='files/teaching/caml/corrige_td05.ml' target='_blank'>corrigé</a> (2.5 ko)</ul><p>TP 6 - La programmation dynamique (5 mars)<ul><li><a href='files/teaching/caml/td06.pdf' target='_blank'>sujet</a> (170,5 ko)<li><a href='files/teaching/caml/corrige_td06.ml' target='_blank'>corrigé</a> (2.7 ko)</ul><p>TP 7 - Les Graphs (12 & 19 mars)<ul><li><a href='files/teaching/caml/td07.pdf' target='_blank'>sujet</a> (159,2 ko)<li> corrigé bientot disponible</ul>",
+					"hide": "true"
+				}
+			]
+		},
+		{
+			"title": "Contact",
+			"content": [
+				{
+					"title": "Contact",
+					"text": "<p>Mobile: (+33) 6 24 23 75 53<br>Email: hadrien.croubois AT ens-lyon.fr<div id='contact_map' class='map' style='height:450px'></div>",
+					"javascript": "var map = L.map('contact_map').setView([45.7298016, 4.8271596], 15); var osmUrl = 'http://tile.openstreetmap.org/{z}/{x}/{y}.png'; var osmAttrib = ''; map.addLayer(new L.TileLayer(osmUrl, {minZoom: 6, maxZoom: 18, attribution: osmAttrib})); popup1 = L.marker([45.7298016, 4.8271596]).bindPopup('ENS de Lyon').addTo(map);"
+				}
+			]
+		}
+	],
+
+
+
+	
+	"sidebar": [
+		{
+			"title": "Links",
+			"content": "<ul><li><a href='http://www.flickr.com/photos/hadriencroubois/' target='_blank'>Gallery</a><li><a href='dev++/dev++.html' target='_blank'>A brief history of programming</a></ul>"
+		},
+		{
+			"title": "Projects",
+			"content": "<ul><li><a href='http://graal.ens-lyon.fr/mdma' target='_blank'>MDMA</a><li><a href='http://sourceforge.net/projects/gridrpcdm/' target='_blank'>GridRPCDM</a></ul>"
+		},
+		{
+			"title": "Timeline",
+			"content": "<a class='twitter-timeline' width='200px' height='400px' href='https://twitter.com/Amxx' data-widget-id='333514817648328705'>Tweets by @Amxx</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='//platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','twitter-wjs');</script>"
+		}
+	],
+	
+	"links": [
+		{
+			"title": "Facebook",
+			"img": "ressources/img/facebook.png",
+			"url": "https://www.facebook.com/hcroubois"
+		},
+		{
+			"title": "Twitter",
+			"img": "ressources/img/twitter.png",
+			"url": "http://twitter.com/Amxx"
+		},
+		{
+			"title": "Stack Overflow",
+			"img": "ressources/img/stackoverflow.png",
+			"url": "http://stackoverflow.com/users/1503898/amxx"
+		},
+		{
+			"title": "GitHub",
+			"img": "ressources/img/github.png",
+			"url": "https://github.com/Amxx"
+		}
+	]
+}
