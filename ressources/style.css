@@ -1,6 +1,6 @@
 /*
  * ==========[ MSE : mini site engine ]==========
- *           Version 2.3.1 : 03/09/2014
+ *           Version 2.4.0 : 03/09/2014
  *
  *        Developped by Hadrien Croubois :
  *           hadrien.croubois@gmail.com
@@ -199,22 +199,23 @@ spacing {
 
 /* ========================[ Erreurs ]======================== */
 
-error {
+#error {
 	position:				fixed;
 	z-index:				100000;
 	top:						45%;
-	height:					10%;
+/*	height:					10%; */
 	left:						10%;
   width:					80%;
 	background:			rgba(8,8,8,0.9);
 	color:					#EEE;
 	overflow:				auto;
-}
-error container {
-	width:					100%;
-	display:				inline-block;
-	vertical-align:	middle;
+	padding:				20px;
+/*display:				inline-block;	*/
+/*vertical-align:	middle;				*/
 	text-align:			center;
+	font-size:			32px;
+
+	cursor:					pointer;
 }
 
 /* ========================[ BIBLIO ]======================== */

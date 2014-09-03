@@ -92,7 +92,7 @@
 			"content": [
 				{
 					"title": "Contact",
-					"text": "<p>Mobile: (+33) 6 24 23 75 53<br>Email: hadrien.croubois AT ens-lyon.fr<div id='contact_map' class='map' style='height:450px'></div>",
+					"text": "<p>Mobile phone: (+33) 6 24 23 75 53<br>Email: hadrien.croubois AT ens-lyon.fr<div id='contact_map' class='map' style='height:450px'></div>",
 					"javascript": "var map = L.map('contact_map').setView([45.7298016, 4.8271596], 15); var osmUrl = 'http://tile.openstreetmap.org/{z}/{x}/{y}.png'; var osmAttrib = ''; map.addLayer(new L.TileLayer(osmUrl, {minZoom: 6, maxZoom: 18, attribution: osmAttrib})); popup1 = L.marker([45.7298016, 4.8271596]).bindPopup('ENS de Lyon').addTo(map);"
 				}
 			]
@@ -105,7 +105,7 @@
 	"sidebar": [
 		{
 			"title": "Links",
-			"content": "<ul><li><a href='http://www.flickr.com/photos/hadriencroubois/' target='_blank'>Gallery</a><li><a href='dev++/dev++.html' target='_blank'>A brief history of programming</a></ul>"
+			"content": "<ul><li><a href='http://www.flickr.com/photos/hadriencroubois/' target='_blank'>Gallery</a><li><a href='http://app.hadriencroubois.com/games/dev++/' target='_blank'>A brief history of programming</a></ul>"
 		},
 		{
 			"title": "Projects",
