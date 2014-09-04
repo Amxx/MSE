@@ -26,7 +26,8 @@ $(function() {
 			case 401:	return "401 Unauthorized";
 			case 403:	return "403 Forbidden";
 			case 404:	return "404 Not Found";
-			default:	return "Undocumented error";
+			case 502: return "502 Bad Gateway";
+			default:	return "Undocumented error ("+id+")";
 		}
 	}
 	function errorDescription(id) {
