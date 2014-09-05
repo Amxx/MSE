@@ -11,6 +11,7 @@ $(function(){
 	$.ajaxSetup({beforeSend: function(xhr) { if (xhr.overrideMimeType) { xhr.overrideMimeType("application/json"); }}});
 
 	var file				= 'ressources/data.json';
+	var title				= '';
 	var pageCurrent = '';
 	var pageDefault	= '';
 	var pageIndex		= new Object();
@@ -18,11 +19,12 @@ $(function(){
 	$('error').text('Loading ...');
 
 	$.getJSON(file, function(json) {
+		title = json.title;
+		$('error').click(function() { window.location.hash = pageCurrent; });
 		buildHeader(json);
 		buildContent(json);
 		buildSidebar(json);
 		buildFooter(json);		
-		$('error').click(function() { window.location.hash = pageCurrent; });
 	})
 	.fail(function() {
 		$('error').text('Error loading data: '+file);
@@ -41,8 +43,9 @@ $(function(){
 		else																							{ window.location.hash = '404error'														}
 	
 		updateError(error);
-		updatePage(hash);
 		updateNav(hash);
+		updatePage(hash);
+		updateTitle(hash, error);
 	});
 
 	/*
@@ -82,6 +85,9 @@ $(function(){
 			$('page').eq(pageIndex[hash]).slideDown('slow');
 			pageCurrent = hash;	
 		}
+	}
+	function updateTitle(hash, error) {
+		document.title = title+" | "+(error?errorText(error):hash);
 	}
 	function updateError(error) {
 		if (error)	$('error').text(errorText(error)).show();
