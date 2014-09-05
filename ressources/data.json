@@ -64,17 +64,6 @@
 							"bibtex" : "@inproceedings{globe14,<br/>  author = {Yves Caniou and Hadrien Croubois and Ga\"el le Mahec},<br/>  title = {Standardized multi-protocol data management for grid and cloud GridRPC frameworks},<br/>  booktitle = {Data Management in Cloud, Grid and P2P Systems, in 7th International Conference, Globe 2014},<br/>  address = {Munich, Germany},<br/>  year = 2014,<br/>  pages = {1--12},<br/>  month = {},<br/>  publisher = {LNCS},<br/>  vol = 8648,<br/>  x-pays = {JP},<br/>  x-editorial-board = {yes},<br/>  x-proceedings = {yes},<br/>  x-international-audience = {yes}<br/>}"
 						}
 					]
-				},
-				{
-					"title": "Article in peer-reviewed journal",
-					"biblio": [
-						{
-							"title" : "Standardized multi-protocol data management for grid and cloud gridrpc frameworks.",
-							"author" : "Yves Caniou, Hadrien Croubois, and Gaël le Mahec.",
-							"ref" : "In Data Management in Cloud, Grid and P2P Systems, in 7th International Conference, Globe 2014, pages 1-12, Munich, Germany, 2014. LNCS.",
-							"bibtex" : "@inproceedings{globe14,<br/>  author = {Yves Caniou and Hadrien Croubois and Ga\"el le Mahec},<br/>  title = {Standardized multi-protocol data management for grid and cloud GridRPC frameworks},<br/>  booktitle = {Data Management in Cloud, Grid and P2P Systems, in 7th International Conference, Globe 2014},<br/>  address = {Munich, Germany},<br/>  year = 2014,<br/>  pages = {1--12},<br/>  month = {},<br/>  publisher = {LNCS},<br/>  vol = 8648,<br/>  x-pays = {JP},<br/>  x-editorial-board = {yes},<br/>  x-proceedings = {yes},<br/>  x-international-audience = {yes}<br/>}"
-						}
-					]
 				}
 			]
 		},
