@@ -1,6 +1,6 @@
 /*
  * ==========[ MSE : mini site engine ]==========
- *           Version 2.4.0 : 03/09/2014
+ *           Version 3.0.0 : 27/05/2013
  *
  *        Developped by Hadrien Croubois :
  *           hadrien.croubois@gmail.com
@@ -8,252 +8,278 @@
  */
 
 * {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-}
-
-html {
-	overflow-y: scroll;
-	height: 100%;
+	-webkit-box-sizing:			border-box;
+	-moz-box-sizing:				border-box;
+	box-sizing:							border-box;
 }
 
 body {
-	margin: 0 auto;
-	width: 820px;
-	
-	font: normal 75% OpenSansRegular;
-	line-height: 1.5;
-	color: #444;
+	margin:									0 auto;
+	width:									840px;	
+	font: 									normal 75% OpenSansRegular;
+	line-height:						1.5;
+	color:									#444;
 }
+
+/*
+ * ==============================================
+ *                      MAIN
+ * ==============================================
+ */
 
 a {
-	color: #456;
-	text-decoration: none;
+	color:									#456;
+	text-decoration:				none;
 }
 a:hover {
-	color: #002;
+  color:									#002;
 }
-
 p {
-	text-align: justify;
-	margin-bottom: 1em;
-}
-
-h1, h2, h3, h4, h5, h6 {
-	font-weight: normal;
-}
-h1 {	
-	font-size: 36px;
-}
-h2 {
-	border-left-width: 4px;
-	border-left-style: solid;	
-	padding-left: 10px;
-	font-size: 24px;
-	margin: 0;
-}
-h5 {
-	margin: 0;
-}
-
-/* ========================[ HEADER ]======================== */
-
-header {
-	position: fixed;
-	top: 0px;
-	z-index: 100000;
-	width: 820px;
-	border-bottom: 1px solid #DDD;	
-	background: #FFF;
-	padding: 0 0 20px 0;
-}
-
-header img {
-	height: 100px;
-	width: 100px;
-	margin-top: 25px;
-	/*
-	border-style: solid;
-	border-width: 3px;
-	border-color: #DDD;
-	*/
-}
-
-nav {
-	overflow: hidden;
-}
-nav a {	
-	font-size: 20px;	
-	color: #888;
-	text-decoration: none;
-}
-nav a:hover {
-	color: #002
-}
-nav li {
-	margin: 0 20px 0 0;
-	list-style: none;
-	float: left;
-}
-nav li.current a {
-	color: #333;
-	border-bottom: 2px solid #94CC5F;
-}
-
-
-/* ========================[ CORE ]======================== */
-
-section {
-	overflow: hidden;
-	z-index: 0;
-}
-section .cols {
-	padding-top: 180px;
-	padding-bottom: 50px;
-}
-
-/* ========================[ FOOTER ]======================== */
-
-footer {
-	position: fixed;
-	bottom: 0px;
-	z-index: 100000;
-	width: 820px;
-	border-top: 1px solid #DDD;	
-	background: #FFF;
-	padding: 10px 0 10px 0;
-	color: #777;
-}
-
-footer a {
-	color: #456;
-	text-decoration: none;
-}
-footer img {
-	vertical-align: middle;
-	display: inline-block;
-}
-
-/* ========================[ GRID ]======================== */
-	
-.cols {
-	float: left;
-	padding: 0 20px 0 20px;
-}
-.cols-25				{	width: 25.00%;	}
-.cols-30				{	width: 30.00%;	}
-.cols-35				{	width: 35.00%;	}
-.cols-40				{	width: 40.00%;	}
-.cols-45				{	width: 45.00%;	}
-.cols-50				{	width: 50.00%;	}
-.cols-55				{	width: 55.00%;	}
-.cols-60				{	width: 60.00%;	}
-.cols-65				{	width: 65.00%;	}
-.cols-70				{	width: 70.00%;	}
-.cols-75				{	width: 75.00%;	}
-.right					{	float: right;		}
-.border					{	border-left: 1px solid #DDD;	}
-.paddless				{	padding: 0;	}
-.paddless-left	{	padding-left: 0;	}
-.paddless-right	{	padding-right: 0;	}
-
-/* ========================[ OTHER ]======================== */
-
-.align_image {
-	padding-right: 5px;
-}
-.text-right
-{
-	text-align: right;
-}
-.text-separator {
-	padding: 0 3px;
-	color: #BBB;
-}
-.quietest {
-	color: #999;
-}
-.label-orange { 
-	border-left-color: #FA8F6F;
-}
-.label-green {
-	border-left-color: #B7D897;
-}
-.label-blue {
-	border-left-color: #55AADA;
-}
-.label-purple { 
-	border-left-color: #666699;
+  text-align:							justify;
+  text-indent:						1em;
+  margin:									0;
 }
 ul {
-	list-style-type: disc;
-	padding-left: 0;
-	margin: 0 0 1.5em 1.5em;
+	list-style-type:				disc;
+	padding-left:						0;
+	margin:									0 0 1.5em 1.5em;
 }
-spacing {
-	display: block;
-	height: 10px;
+
+.quiet {
+	color:									#999;
+}
+
+.bordered {
+	border-left-width:			4px;
+	border-left-style:			solid;	
+	padding-left:						10px;
+}
+
+.label-orange { 
+	border-left-color:			#FA8F6F;
+}
+.label-green {
+	border-left-color:			#B7D897;
+}
+.label-blue {
+	border-left-color:			#55AADA;
+}
+.label-purple { 
+	border-left-color:			#666699;
 }
 
 
-/* ========================[ Erreurs ]======================== */
 
-#error {
-	position:				fixed;
-	z-index:				100000;
-	top:						45%;
-/*	height:					10%; */
-	left:						10%;
-  width:					80%;
-	background:			rgba(8,8,8,0.9);
-	color:					#EEE;
-	overflow:				auto;
-	padding:				20px;
-/*display:				inline-block;	*/
-/*vertical-align:	middle;				*/
-	text-align:			center;
-	font-size:			32px;
+/*
+ * ==============================================
+ *                     HEADER                    
+ * ==============================================
+ */
 
-	cursor:					pointer;
+header {
+	position:								fixed;
+	top:										0px;
+	z-index:								100000;
+	width:									840px;
+	padding:								20px;
+	
+	border-bottom:					1px solid #DDD;	
+	background: 						#FFF;
 }
 
-/* ========================[ BIBLIO ]======================== */
+#name {
+	display: 								block;
+	float:									left;
+	height:									70px;
+	width:									calc(100% - 100px);
+	font-size:							36px;
+}
 
-bibtitle {
-	margin-top: 10px;
-	display: block;
-	font-weight: bold;
+#picture {
+	display:								block;
+	float:									right;
+	height:									100px;
+	width:									100px;
 }
-bibauthor {
-	display: block;
-}
-bibref {
-	margin-right: 5px;
-	margin-bottom: 10px;
-	display: block;
-	font-style: italic;
-	color: #888;
-	/*font-size: 80%;*/
-}
-bibref a {
-	margin-left: 5px;
-	color: #88F;
-	/*font-size: 80%;*/
-}
-bibtex {
-	padding-left: 10px;
-	display: block;
-	font-size: 80%;
-}
-/* ========================[ FEATURES ]======================== */
 
-.map {
-	border: 0 auto;
-/*	height: 450px; */
-	background: #DDD;
+/*
+ * ==============================================
+ *                   NAVIGATION
+ * ==============================================
+ */
+
+#nav {
+	overflow:								hidden;
+	display:								block;
+	float:									left;
+	height:									30px;
+	width:									calc(100% - 100px);
 }
-#timeline {
-	width: 100px;
-	height: 380px;
+
+#nav a {
+	font-size:							20px;
+	color:									#888;
+	text-decoration:				none;
 }
+
+#nav li {
+	margin-right:						20px;
+	list-style:							none;
+	float:									left;
+}
+#nav li.current a {
+	color:									#333;
+	border-bottom:					2px solid #94CC5F;
+}
+
+/*
+ * ==============================================
+ *                SECTION & ASIDE
+ * ==============================================
+ */
+
+section, aside {
+	display:								block;
+	margin-top:							140px;
+	margin-bottom:					50px;
+	z-index:								0;
+	padding:								20px;
+}
+
+
+
+section {
+	width:									75%;
+	float:									left;
+}
+section article {
+	padding-bottom:					25px;
+}
+section h2 {
+	margin:									0 0 10px 0;
+	font-weight:						normal;
+	font-size:							24px;
+}
+section h5 {
+	margin:									0;
+	font-weight:						normal;
+}
+
+
+
+aside {
+	width:									25%;
+	float:									right;
+	border-left:						1px solid #DDD;
+}
+aside article {
+	padding-bottom:					10px;
+}
+aside h2 {
+	margin:									0 0 10px 0;
+	font-weight:						normal;
+	font-size:							24px;
+}
+
+/*
+ * ==============================================
+ *                     FOOTER
+ * ==============================================
+ */
+
+footer {
+	position:								fixed;
+	bottom:									0px;
+	z-index:								100000;
+	width:									840px;
+	padding: 								15px 20px 15px 20px;
+	border-top:							1px solid #DDD;	
+	background:							#FFF;
+}
+
+#social {
+	display: 								inline;
+	float:									left;
+	min-width:							100px;
+}
+
+#social li {
+	margin-right:						6px;
+  list-style:             none;
+	float:                 	left;
+}
+
+#social img {
+	margin-right:						3px;
+	vertical-align:					middle;
+	display:								inline-block;
+	height:									18px;
+}
+
+
+
+
+#mininav {
+	display:								inline;
+	float:									right;
+	min-width:							100px;
+}
+
+#mininav li {
+	display:								inline;
+	margin-right:						6px;
+	padding-right:					6px;
+	border-right:						1px solid #DDD;
+	list-style:							none;
+}
+#mininav pagetop {
+	display:								inline;
+	color:									#999;
+}
+
+
+/*
+ * ==============================================
+ *                     ERROR
+ * ==============================================
+ */
+
+error {
+	position:								fixed;
+	z-index:								100000;
+
+	width:									1200px;
+	left:										calc(50% - 600px); 
+	height:									100px;
+	top:										calc(50% - 50px);
+
+
+	background:							rgba(8,8,8,0.8);
+	color:									#EEE;
+	padding:								20px;
+	
+	text-align:							center;
+	font-size:							32px;
+	cursor:									pointer;
+}
+
+
+
+/*
+ * ==============================================
+ *                     TOOLS
+ * ==============================================
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
