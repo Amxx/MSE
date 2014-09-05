@@ -10,12 +10,10 @@
 $(function(){
 	$.ajaxSetup({beforeSend: function(xhr) { if (xhr.overrideMimeType) { xhr.overrideMimeType("application/json"); }}});
 
-
 	var file				= 'ressources/data.json';
 	var pageCurrent = '';
 	var pageDefault	= '';
 	var pageIndex		= new Object();
-
 
 	$('error').text('Loading ...');
 
@@ -47,14 +45,12 @@ $(function(){
 		updateNav(hash);
 	});
 
-
-
-
 	/*
 	 * ==========================================================================
 	 * =                             Tool Functions                             =
 	 * ==========================================================================
 	 */
+	
 	function goTop() {
 		document.body.scrollTop = document.documentElement.scrollTop = 0;
   }
@@ -68,12 +64,14 @@ $(function(){
 			default:	return "Undocumented error ("+error+")";
 		}
 	}
+
 	/*
 	 * ==========================================================================
 	 * =                            Update Functions                            =
 	 * ==========================================================================
 	 */
-  function updateNav(hash) {
+  
+	function updateNav(hash) {
   	$('#nav li').removeClass();
 		$('#nav li').eq(pageIndex[hash]).addClass("current");
   }
@@ -95,6 +93,7 @@ $(function(){
 	 * =                            Build Functions                             =
 	 * ==========================================================================
 	 */
+	
 	function buildHeader(data) {
 		$('#name').text(data.title);
 		$('#picture').attr('src', data.picture);

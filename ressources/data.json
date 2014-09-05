@@ -92,7 +92,7 @@
 			"article": [
 				{
 					"title": "Contact",
-					"text": "<p>Mobile phone: (+33) 6 24 23 75 53<br>Email: hadrien.croubois AT ens-lyon.fr<div id='contact_map' class='map' style='height:450px'></div>",
+					"text": "<p class='noindent'>Mobile phone: (+33) 6 24 23 75 53<br>Email: hadrien.croubois AT ens-lyon.fr<div id='contact_map' class='map' style='height:450px'></div>",
 					"javascript": "var map = L.map('contact_map').setView([45.7298016, 4.8271596], 15); var osmUrl = 'http://tile.openstreetmap.org/{z}/{x}/{y}.png'; var osmAttrib = ''; map.addLayer(new L.TileLayer(osmUrl, {minZoom: 6, maxZoom: 18, attribution: osmAttrib})); popup1 = L.marker([45.7298016, 4.8271596]).bindPopup('ENS de Lyon').addTo(map);"
 				}
 			]
