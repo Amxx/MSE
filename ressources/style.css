@@ -1,6 +1,6 @@
 /*
  * ==========[ MSE : mini site engine ]==========
- *           Version 3.0.0 : 27/05/2013
+ *           Version 3.0.1 : 05/09/2014
  *
  *        Developped by Hadrien Croubois :
  *           hadrien.croubois@gmail.com
@@ -39,6 +39,9 @@ p {
   text-indent:						1em;
   margin:									0;
 }
+p.noindent {
+	text-indent:						0;	
+}
 ul {
 	list-style-type:				disc;
 	padding-left:						0;
@@ -48,13 +51,11 @@ ul {
 .quiet {
 	color:									#999;
 }
-
 .bordered {
 	border-left-width:			4px;
 	border-left-style:			solid;	
 	padding-left:						10px;
 }
-
 .label-orange { 
 	border-left-color:			#FA8F6F;
 }
@@ -67,8 +68,6 @@ ul {
 .label-purple { 
 	border-left-color:			#666699;
 }
-
-
 
 /*
  * ==============================================
@@ -146,11 +145,12 @@ section, aside {
 	padding:								20px;
 }
 
-
-
 section {
 	width:									75%;
 	float:									left;
+}
+page {
+	width:									100%;
 }
 section article {
 	padding-bottom:					25px;
@@ -165,8 +165,6 @@ section h5 {
 	font-weight:						normal;
 }
 
-
-
 aside {
 	width:									25%;
 	float:									right;
@@ -179,6 +177,43 @@ aside h2 {
 	margin:									0 0 10px 0;
 	font-weight:						normal;
 	font-size:							24px;
+}
+
+/*
+ * ==============================================
+ *                     BIBLIO
+ * ==============================================
+ */
+
+bibtitle {
+	display:								block;
+	margin-top:							10px;
+	font-weight:						bold;
+}
+
+bibauthor {
+	display:								block;
+}
+
+bibref {
+	display:								block;
+	padding-bottom:					10px;
+	font-style:							italic;
+	color:									#888;
+	/*font-size: 80%;*/
+}
+
+bibref a {
+	margin-left:						5px;
+	color:									#88F;
+	/*font-size: 80%;*/
+}
+
+bibtex {
+	display:								block;
+	padding-left:						10px;
+	font-size:							80%;
+	white-space:						pre;
 }
 
 /*
@@ -216,9 +251,6 @@ footer {
 	height:									18px;
 }
 
-
-
-
 #mininav {
 	display:								inline;
 	float:									right;
@@ -237,7 +269,6 @@ footer {
 	color:									#999;
 }
 
-
 /*
  * ==============================================
  *                     ERROR
@@ -253,7 +284,6 @@ error {
 	height:									100px;
 	top:										calc(50% - 50px);
 
-
 	background:							rgba(8,8,8,0.8);
 	color:									#EEE;
 	padding:								20px;
@@ -263,23 +293,21 @@ error {
 	cursor:									pointer;
 }
 
-
-
 /*
  * ==============================================
- *                     TOOLS
+ *                    FEATURES
  * ==============================================
  */
 
+.map {
+	margin:									10px 0 10px 0;
+	border:									0 auto;
+	background:							#DDD;
+}
 
-
-
-
-
-
-
-
-
-
+#timeline {
+	width:									100px;
+	height:									380px;
+}
 
 
