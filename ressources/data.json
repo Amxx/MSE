@@ -8,8 +8,8 @@
 			"article": [
 				{
 					"title": "About me",
-					"text": "<p>I am a master student supervised by the <a href='http://www.ens-lyon.fr/DI/' target='_blank'>Computer Science Department</a> of the <a href='http://www.ens-lyon.eu' target='_blank'>ENS de Lyon</a> where I studied parallel processing, distributed systems and compilation. I am currently studying image acquisition and processing as a M2 student at the <a href='http://www.univ-lyon1.fr/' target='_blank'>University Claude Bernard of Lyon (UCBL)</a>.</p> <div id='map_ucbl' class='map' style='height:240px'></div>", 
-					"javascript": "var map = L.map('map_ucbl').setView([45.780268, 4.868528],  15); var osmUrl = 'http://tile.openstreetmap.org/{z}/{x}/{y}.png'; var osmAttrib = ''; map.addLayer(new L.TileLayer(osmUrl, {minZoom: 6, maxZoom: 18, attribution: osmAttrib})); popup1 = L.marker([45.782205, 4.865699]).bindPopup('UCBL').addTo(map);"
+					"text": "<p>I am a French computer science student supervised by the <a href='http://www.ens-lyon.fr/DI/' target='_blank'>Computer Science Department</a> of the <a href='http://www.ens-lyon.eu' target='_blank'>ENS de Lyon</a>. I specialize in  parallel processing, distributed systems, compilation and image rendering. After having obtained my master degree from <a href='http://www.univ-lyon1.fr/' target='_blank'>University Claude Bernard of Lyon (UCBL)</a> I am now working at the MCS department of <a href='http://www.anl.gov/' target='_blank'>Argonne National Laboratory, Illinois</a>.</p><div id='map_about' class='map' style='height:240px'></div>",
+					"javascript": "var map_about = L.map('map_about').setView([41.713763, -87.982914], 12); map_about.addLayer(new L.TileLayer('http://tile.openstreetmap.org/{z}/{x}/{y}.png', {minZoom: 6, maxZoom: 18, attribution: ''})); L.marker([41.717447, -87.983429]).bindPopup('MCS, Bldg 240').addTo(map_about);"					
 				}
 			],
 			"default":true
@@ -19,7 +19,7 @@
 			"article": [
 				{
 					"title": "Academic curriculum",
-					"text": "<ul><li>2013-present: <b>Master in Computer Science,</b>,<ul><li><a href='http://www.univ-lyon1.fr/' target='_blank'>UBCL Lyon 1, Lyon, France.</a><li>Specialization : Image acquisition and processing (Research).</ul><li>2012-2013: <b>Master in Computer Science</b>,<ul><li> <a href='http://www.ens-lyon.fr/DI/' target='_blank'>Ecole Normale Supérieur de Lyon - ENSL, Lyon, France.</a></ul><li>2011-2012: <b>\"Licence\" with distinction in Computer Science</b>,<ul><li><a href='http://www.ens-lyon.fr/DI/' target='_blank'>Ecole Normale Supérieur de Lyon - ENSL, Lyon, France.</a><li>Equivalent to Bachelor</ul><li>April 2010: <b>Honourable Mention in the French national selection for IPhO</b>,<ul><li> International Physics Olympiads.</ul><li>2009-2011: <b>\"Classes préparatoires\" in Science</b>,<ul><li>Lycée St-Louis, Paris, France.<li>Specialization : Computer Science.</ul><li>June 2009: <b>Scientific high school diploma with distinction</b>,<ul><li> <a href='http://www.lfjtokyo.org' target='_blank'>Lycée Franco-Japonais de Tokyo - LFJT, Tokyo, Japan.</a></ul></ul>View my <a href='files/CrouboisHadrien.pdf' target='_blank'>full resume</a>"
+					"text": "<ul><li>2014-present: <b>Research Scolar,</b><ul><li><a href='http://www.anl.gov/' target='_blank'>Argonne National Laboratory, Illinois</a></ul><li>2013-2014: <b>Master in Computer Science,</b><ul><li><a href='http://www.univ-lyon1.fr/' target='_blank'>UBCL Lyon 1, Lyon, France.</a><li>Specialization : Image acquisition and processing (Research).</ul><li>2012-2013: <b>Master in Computer Science</b>,<ul><li> <a href='http://www.ens-lyon.fr/DI/' target='_blank'>Ecole Normale Supérieur de Lyon - ENSL, Lyon, France.</a></ul><li>2011-2012: <b>\"Licence\" with distinction in Computer Science</b>,<ul><li><a href='http://www.ens-lyon.fr/DI/' target='_blank'>Ecole Normale Supérieur de Lyon - ENSL, Lyon, France.</a><li>Equivalent to Bachelor</ul><li>April 2010: <b>Honourable Mention in the French national selection for IPhO</b>,<ul><li> International Physics Olympiads.</ul><li>2009-2011: <b>\"Classes préparatoires\" in Science</b>,<ul><li>Lycée St-Louis, Paris, France.<li>Specialization : Computer Science.</ul><li>June 2009: <b>Scientific high school diploma with distinction</b>,<ul><li> <a href='http://www.lfjtokyo.org' target='_blank'>Lycée Franco-Japonais de Tokyo - LFJT, Tokyo, Japan.</a></ul></ul>View my <a href='files/CrouboisHadrien.pdf' target='_blank'>full resume</a>"
 				}
 			]
 		},
@@ -103,8 +103,8 @@
 			"article": [
 				{
 					"title": "Contact",
-					"text": "<p class='noindent'>Mobile phone: (+33) 6 24 23 75 53<br>Email: hadrien.croubois AT ens-lyon.fr<div id='contact_map' class='map' style='height:450px'></div>",
-					"javascript": "var map = L.map('contact_map').setView([45.7298016, 4.8271596], 15); var osmUrl = 'http://tile.openstreetmap.org/{z}/{x}/{y}.png'; var osmAttrib = ''; map.addLayer(new L.TileLayer(osmUrl, {minZoom: 6, maxZoom: 18, attribution: osmAttrib})); popup1 = L.marker([45.7298016, 4.8271596]).bindPopup('ENS de Lyon').addTo(map);"
+					"text": "<h2>France</h2><p class='noindent'>Mobile phone : (+33) 6 24 23 75 53<br>Email: hadrien.croubois@ens-lyon.fr<div id='map_contact_fr' class='map' style='height:300px'></div><h2>US</h2><p class='noindent'>Mobile phone : soon<br>Email: hcroubois@anl.gov<div id='map_contact_us' class='map' style='height:300px'></div>",
+					"javascript": "var map_contact_fr = L.map('map_contact_fr').setView([45.7298016, 4.8271596], 14); map_contact_fr.addLayer(new L.TileLayer('http://tile.openstreetmap.org/{z}/{x}/{y}.png', {minZoom: 6, maxZoom: 18, attribution: ''})); L.marker([45.7298016, 4.8271596]).bindPopup('ENS de Lyon').addTo(map_contact_fr); L.marker([45.732573, 4.826163]).bindPopup('Home').addTo(map_contact_fr); var map_contact_us = L.map('map_contact_us').setView([41.794979, -87.602963], 13); map_contact_us.addLayer(new L.TileLayer('http://tile.openstreetmap.org/{z}/{x}/{y}.png', {minZoom: 6, maxZoom: 18, attribution: ''})); L.marker([41.800908, -87.602931]).bindPopup('Home').addTo(map_contact_us);"
 				}
 			]
 		}
