@@ -92,7 +92,7 @@
 			"article": [
 				{
 					"title": "Contact",
-					"text": "<h2>France</h2><p class='noindent'>Mobile phone : (+33) 6 24 23 75 53<br>Email: hadrien.croubois@ens-lyon.fr<div id='map_contact_fr' class='map' style='height:300px'></div><h2>US</h2><p class='noindent'>Mobile phone : soon<br>Email: hcroubois@anl.gov<div id='map_contact_us' class='map' style='height:300px'></div>",
+					"text": "<h2>France</h2><p class='noindent'>Mobile phone : +33 6 24 23 75 53<br>Email: hadrien.croubois@ens-lyon.fr<div id='map_contact_fr' class='map' style='height:300px'></div><h2>US</h2><p class='noindent'>Mobile phone : +1 (331) 803-1314<br>Email: hcroubois@anl.gov<div id='map_contact_us' class='map' style='height:300px'></div>",
 					"javascript": "var map_contact_fr = L.map('map_contact_fr').setView([45.7298016, 4.8271596], 14); map_contact_fr.addLayer(new L.TileLayer('http://tile.openstreetmap.org/{z}/{x}/{y}.png', {minZoom: 6, maxZoom: 18, attribution: ''})); L.marker([45.7298016, 4.8271596]).bindPopup('ENS de Lyon').addTo(map_contact_fr); L.marker([45.732573, 4.826163]).bindPopup('Home').addTo(map_contact_fr); var map_contact_us = L.map('map_contact_us').setView([41.794979, -87.602963], 13); map_contact_us.addLayer(new L.TileLayer('http://tile.openstreetmap.org/{z}/{x}/{y}.png', {minZoom: 6, maxZoom: 18, attribution: ''})); L.marker([41.800908, -87.602931]).bindPopup('Home').addTo(map_contact_us);"
 				}
 			]
