@@ -150,6 +150,18 @@ $(function(){
 							.append($('<bibtitle/>').html(biblio.title))
 							.append($('<bibauthor/>').html(biblio.author))
 							.append($('<bibref/>').html(biblio.ref));
+						// if pdf link is present
+						if (biblio.pdf)
+						{
+							$('page').eq(page_key).find('article').eq(article_key).find('bibref').eq(biblio_key)
+								.append(
+										$('<a/>')
+										.attr('href', biblio.pdf)
+										.attr('target', '_blank')
+										.text('[Pdf]')
+								);
+						}
+						// end pdf link is present
 						// if bibtex entry is present
 						if (biblio.bibtex)
 						{
