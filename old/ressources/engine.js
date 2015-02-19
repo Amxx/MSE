@@ -151,6 +151,16 @@ $(function(){
 							.append($('<bibauthor/>').html(biblio.author))
 							.append($('<bibref/>').html(biblio.ref));
 						// if bibtex entry is present
+						if (biblio.pdf)
+						{
+							$('page').eq(page_key).find('article').eq(article_key).find('bibref').eq(biblio_key)
+								.append(
+										$('<a/>')
+										.attr('href', biblio.pdf)
+										.attr('target', '_blank')
+										.text('[Pdf]')
+								);
+						}
 						if (biblio.bibtex)
 						{
 							$('page').eq(page_key).find('article').eq(article_key).find('bibref').eq(biblio_key)
